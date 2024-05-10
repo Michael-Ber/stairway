@@ -1,0 +1,119 @@
+.examples {
+    padding: 0 15px;
+}
+.swiper {
+}
+.examples-swiper {
+
+		&__wrapper {
+            padding-bottom: 75px;
+		}
+
+		&__slide {
+            img {
+                width: 100%;
+                height: 471px;
+            }
+		}
+
+		&__slide-img {
+		}
+
+        &__control {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 20px; 
+        }
+
+        &__divider {
+            width: clamp(10%, 30vw, 45%);
+            height: 2px;
+            background: $gray-100;
+            margin: 0 20px;
+            @include tablet-sm {
+                display: none;
+            }
+        }
+
+		&__pagination {
+            @include tablet-sm {
+                margin-right: 20px;
+            }
+		}
+        &__pagination-bullet {
+            display: inline-block;
+            width: 14px;
+            height: 14px;;
+            background: $white;
+            border: 1px solid $white;
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+            &--active {
+                background: $main-color;
+            }
+        }
+
+        &__prev {
+            margin-right: 23px;
+        }
+		
+
+        &__next {
+            margin-right: 25px;
+
+        }
+
+        &__btn {
+            padding: 7px 28px;
+        }
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal.examples-swiper__pagination {
+    position: static;
+    width: unset;
+    cursor: pointer;
+}
+.swiper-button-prev.swiper-btn, .swiper-button-next.swiper-btn{
+    position: static;
+    width: 42px;
+    height: 42px;
+    border: 2px solid $main-color;
+    margin-top: unset;
+    transition: .3s box-shadow ease;
+    &:hover {
+        box-shadow: 0 0 10px 0 $main-color;
+    }
+    &::after {
+        color: $white;
+        font-size: 12px;
+        font-weight: 700;
+    }
+} 
+
+// .swiper-button-next.examples-swiper__next {
+//     position: static;
+//     width: 43px;
+//     height: 43px;
+//     border: 2px solid $main-color;
+//     &::after {
+//         color: $white;
+//         font-size: 12px;
+//         font-weight: 700;
+//     }
+// }
+
+
+
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
