@@ -1,0 +1,30 @@
+.header {
+    background: $gray-200;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }    
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        font-size: clamp(15px, 4vw, 20px);
+        line-height: 100%;
+        transition: .3s color ease-in-out;
+        &:hover {
+            color: $main-color;
+        }
+        &::before {
+            content: url('../assets/img/phone.svg');
+        }
+        @include mobile {
+            gap: 8px
+        }
+    }
+}
+.logo {
+    width: clamp(120px, 30vw, 183px);
+}

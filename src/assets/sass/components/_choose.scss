@@ -1,0 +1,96 @@
+.choose {
+    padding-bottom: 75px;
+    &__subtitle {
+        margin-bottom: 23px;
+    }
+
+    &__title {
+        margin-bottom: 32px;
+    }
+
+    &__why {
+        display: flex;
+        justify-content: space-between;
+        gap: 66px;
+        margin-bottom: 34px;
+        @include tablet-sm {
+            flex-direction: column;
+            gap: 30px
+        }
+        @include mobile {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        @include tablet {
+            width: 40%;
+        }
+        @include tablet-sm {
+            width: 80%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+
+    &__list {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        
+        &::before {
+            content: url('../assets/img/mark.svg')
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__cooperate {
+    }
+
+    &__cooperate-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    &__cooperate-title {
+        margin-bottom: 21px;
+        @include mobile {
+            text-align: center;
+        }
+    }
+
+    &__cooperate-item {
+        padding: 10px;
+    }
+}
+.cooperate-item {
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 135px;
+        height: 114px;
+        border: 2px solid $main-color;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    &__svg {
+        max-width: 78px;
+        max-height: 76px;
+    }
+
+    &__descr {
+        text-align: center;
+    }
+}

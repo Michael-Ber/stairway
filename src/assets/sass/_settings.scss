@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.page {
+    &__body {
+        @include school;
+        min-width: $minWidth + px;
+        min-height: 100%;
+        font-size: 16px; 
+        line-height: 1.2;
+        font-weight: 400;
+        color: $white;
+        background: $gray-500;
+    }
+}
+
+.site-container {
+    position: relative;
+    max-width: $site-container-width;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 $container-offset;
+    max-width: $container-width;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'Arial', sans-serif;
+    font-size: clamp(16px, 4vw, 21px);
+    font-weight: 400;
+    &_main {
+        border: 2px solid $orange;
+        background: transparent;
+        padding: 12px 40px;
+        color: $white;
+        transition: .3s box-shadow ease;
+        &:hover {
+            box-shadow: 0 0 10px 0 $main-color;
+        }
+    }
+    &_measure {
+        border: 2px solid $black;
+        padding: 12px 52px;
+        color: $black;
+        background: $main-color;
+        transition: .3s background ease-in-out;
+        &:hover {
+            background: lighten($main-color, 10%);
+        }
+    }
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-reset {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+        display: none;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 $container-offset;
+    max-width: $container-width;
+}
+
+.section-offset {
+    padding-top: $section-offset;
+}
+
+.main-title {
+    font-size: clamp(26px, 6vw, 70px);
+    line-height: 94%;
+    color: $text;
+    font-weight: 400;
+}
+
+.section-title {
+    @include olympia;
+    font-size: clamp(24px, 4vw, 50px);
+    font-weight: 400;
+    color: $white;
+    margin: 0;
+    text-transform: uppercase;
+    &_color {
+        color: $main-color;
+    }
+}
+
+.section-subtitle {
+    @include haus;
+    font-weight: 300;
+    color: $white;
+    font-size: clamp(18px, 4vw, 25px);
+    text-transform: uppercase;
+}
+
+.h4-title {
+    @include olympia;
+    
+}
