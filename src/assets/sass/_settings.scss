@@ -127,6 +127,9 @@ p {
     line-height: 94%;
     color: $text;
     font-weight: 400;
+    &::first-letter {
+        color: $main-color;
+    }
 }
 
 .section-title {
@@ -136,7 +139,7 @@ p {
     color: $white;
     margin: 0;
     text-transform: uppercase;
-    &_color {
+    &::first-letter {
         color: $main-color;
     }
 }
@@ -151,8 +154,13 @@ p {
 
 .h4-title {
     @include olympia;
+    &::first-letter {
+        color: $main-color;
+    }
 }
 
 .colored {
     color: $main-color;
 }
+
+

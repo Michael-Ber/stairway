@@ -127,6 +127,8 @@ p {
   line-height: 94%;
   color: #1e1e1e;
   font-weight: 400; }
+  .main-title::first-letter {
+    color: #ff6600; }
 
 .section-title {
   font-family: "Olympia Deco";
@@ -135,7 +137,7 @@ p {
   color: #ffffff;
   margin: 0;
   text-transform: uppercase; }
-  .section-title_color {
+  .section-title::first-letter {
     color: #ff6600; }
 
 .section-subtitle {
@@ -147,6 +149,8 @@ p {
 
 .h4-title {
   font-family: "Olympia Deco"; }
+  .h4-title::first-letter {
+    color: #ff6600; }
 
 .colored {
   color: #ff6600; }
