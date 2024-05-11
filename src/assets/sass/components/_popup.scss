@@ -1,0 +1,82 @@
+.popup {
+    position: absolute;
+    display: none;
+    top: 200px;
+    padding-bottom: 30px;
+    &--visible {
+        display: block;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: clamp(280px, 80vw, 500px);
+        border: 2px solid $main-color;
+        padding: 40px;
+        background: $gray-300;
+        border-radius: 5px;
+    }
+
+    &__input {
+        width: 100%;
+        min-height: 50px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: clamp(16px, 4vw, 22px);
+        padding: 0 20px;
+    }
+
+    &__send {
+        color: $white;
+        border-color: $white;
+    }
+
+}
+
+.popup-close {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 20px);
+    transform: translateX(-50%);
+    transition: .3s transform ease-in-out;
+    padding: 10px;
+    cursor: pointer;
+    &::after, &::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: $white;
+        
+    }
+    &::after {
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+    &::before {
+        transform: rotate(-45deg) translate(-1px, 1px);
+    }
+    &:hover {
+        transform: translateX(-50%) rotate(90deg);
+    }
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(24, 24, 27, .7);
+    z-index: 100;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s opacity ease-in-out, .3s visibility ease-in-out;
+    &--visible {
+        opacity: 1;
+        visibility: visible;
+    }
+}

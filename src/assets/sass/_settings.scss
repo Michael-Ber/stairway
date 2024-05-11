@@ -18,6 +18,10 @@ html {
         font-weight: 400;
         color: $white;
         background: $gray-500;
+        overflow-y: auto;
+        &--scroll-unable {
+            overflow-y: hidden;
+        }
     }
 }
 

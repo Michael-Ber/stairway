@@ -1,14 +1,19 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export const carousel = () => {
     try {
-        const swiper = new Swiper('.swiper', {
+        const swiper = new Swiper('.examples-swiper', {
             loop: true,
             spaceBetween: 17,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+
             breakpoints: {
                 992: {
                     slidesPerView: 3
@@ -34,7 +39,7 @@ export const carousel = () => {
                 nextEl: '.examples-swiper__next',
                 prevEl: '.examples-swiper__prev',
             },
-            modules: [Navigation, Pagination]
+            modules: [Navigation, Pagination, Autoplay]
         });
     } catch (error) {
         console.log(error)
