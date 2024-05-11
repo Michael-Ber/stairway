@@ -141,11 +141,14 @@ p {
     @include haus;
     font-weight: 300;
     color: $white;
-    font-size: clamp(18px, 4vw, 25px);
+    font-size: clamp(18px, 2vw, 25px);
     text-transform: uppercase;
 }
 
 .h4-title {
     @include olympia;
-    
+}
+
+.colored {
+    color: $main-color;
 }

@@ -15,11 +15,6 @@
             text-align: center;
         }
     }
-
-    &__title-bold {
-        color: $main-color;
-    }
-
     &__measure {
         max-width: 657px;
         padding: 11px 26px 7px 23px;
@@ -34,9 +29,7 @@
         text-align: center;
     }
 
-    &__subtitle-color {
-        color: $main-color;
-    }
+    
 
     &__btn {
         display: block;

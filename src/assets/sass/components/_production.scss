@@ -1,4 +1,5 @@
 .production {
+    background: $black-bg;
     padding-bottom: 90px;
     &__subtitle {
         margin-bottom: 23px;
@@ -47,16 +48,11 @@
         margin-bottom: 18px;
     }
 
-    &__svg {
-    }
 
     &__bottom {
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-    }
-
-    &__cost {
     }
 
     &__btn {

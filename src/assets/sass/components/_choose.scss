@@ -1,4 +1,5 @@
 .choose {
+    background: $black-bg;
     padding-bottom: 75px;
     &__subtitle {
         margin-bottom: 23px;
@@ -53,8 +54,6 @@
         }
     }
 
-    &__cooperate {
-    }
 
     &__cooperate-wrapper {
         display: grid;

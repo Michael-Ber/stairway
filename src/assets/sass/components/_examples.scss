@@ -1,7 +1,14 @@
 .examples {
+    background: $black-bg;
     padding: 0 15px;
-}
-.swiper {
+    padding-bottom: 54px;
+
+    &__subtitle {
+        margin-bottom: 10px;
+    }
+    &__title {
+        margin-bottom: 33px;
+    }
 }
 .examples-swiper {
 
@@ -16,8 +23,6 @@
             }
 		}
 
-		&__slide-img {
-		}
 
         &__control {
             display: flex;
@@ -92,28 +97,3 @@
         font-weight: 700;
     }
 } 
-
-// .swiper-button-next.examples-swiper__next {
-//     position: static;
-//     width: 43px;
-//     height: 43px;
-//     border: 2px solid $main-color;
-//     &::after {
-//         color: $white;
-//         font-size: 12px;
-//         font-weight: 700;
-//     }
-// }
-
-
-
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}

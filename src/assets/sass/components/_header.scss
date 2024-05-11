@@ -11,18 +11,21 @@
         display: flex;
         align-items: center;
         gap: 13px;
-        font-size: clamp(15px, 4vw, 20px);
-        line-height: 100%;
-        transition: .3s color ease-in-out;
-        &:hover {
-            color: $main-color;
-        }
         &::before {
             content: url('../assets/img/phone.svg');
         }
         @include mobile {
             gap: 8px
         }
+    }
+}
+
+.phone-link {
+    font-size: clamp(15px, 4vw, 20px);
+    line-height: 100%;
+    transition: .3s color ease-in-out;
+    &:hover {
+        color: $main-color;
     }
 }
 .logo {
