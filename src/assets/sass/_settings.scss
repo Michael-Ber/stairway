@@ -146,7 +146,6 @@ p {
 
 .section-subtitle {
     @include haus;
-    font-weight: 300;
     color: $white;
     font-size: clamp(18px, 2vw, 25px);
     text-transform: uppercase;
